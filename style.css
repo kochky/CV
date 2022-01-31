@@ -3,7 +3,7 @@ body{
     max-width:840px;
     margin:0 auto;
     border:1px solid black;
-    font-size:14px;
+    font-size:10px;
     max-height:1188px;
     min-height:1188px;
     min-width:840px;
@@ -20,30 +20,30 @@ ul {
 }
 
 li {
-    margin-bottom:5px;
+    margin-bottom:10px;
     display:flex;
     justify-content: flex-start;
 }
 
 
 h1{
-    font-size: 50px;
+    font-size: 36px;
     font-weight:bold
 }
 
 h2 {
-    font-size:26px;
+    font-size:20px;
 }
 
 h3 {
-    font-size:20px;
+    font-size:16px;
     border-bottom: 5px solid black;
     padding-bottom:5px;
     margin-bottom:10px;
 }
 
 h4{
-    font-size:16px;
+    font-size:12px;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -69,9 +69,10 @@ img {
 
 #hero{
     box-sizing: border-box;
-    padding:10px 30px;
+    padding:30px;
     width:810px;
-    font-size:16px;
+    font-size:12px;
+    width:80%;
 }
 
 main {
@@ -80,22 +81,28 @@ main {
     flex-wrap: wrap;
     column-gap: 5%;
     background-color: #4A919E;
-    padding:20px;
-    padding-right:0;
-    width:810px;
+    padding:20px 0;
+    width:760px;
     margin-bottom:50px;
     
 }
 
 .first-section {
-    width:60%;
+    width:100%;
 }
 
 .second-section {
-    width:35%;
+    width:100%;
     display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.second-section article {
+    flex:1;
+}
+
+#contact {
+    flex:1.2
 }
 
 main section article {
@@ -107,9 +114,8 @@ main section article {
     margin-bottom:10px;
 }
 
-
-article div, article p, article ul {
-    padding-left:10px;
+article div, article p, article ul, article h3 {
+    padding-left:30px;
 }
 
 #contact ul li p {
@@ -122,9 +128,7 @@ article div, article p, article ul {
     margin-bottom:10px;
 }
 
-i {
-    margin-right:5px;
-}
+
 
 h4 +p {
     color:#212E53
@@ -140,20 +144,29 @@ article li {
     align-items: center;
     box-sizing: border-box;
     flex-wrap: wrap;
- }
+}
 
 .perso div div {
     margin:0;
     padding:0;
+    
 }
 
 .experience {
-width:100%;
-
+    width:100%;
 }
 
 .experience div {
     display:flex;
     margin:0;
     margin-bottom:5px;
+    align-items: center;
+}
+
+.experience div p, .perso div div p, .perso div p, #contact ul li p, .formation div p  {
+    padding-left:10px;
+}
+
+.formation div p{
+    margin-right:60px;
 }
