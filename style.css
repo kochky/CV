@@ -1,12 +1,12 @@
-body{
+#toPdf{
     font-family: arial;
     max-width:840px;
     margin:0 auto;
-    border:1px solid black;
-    font-size:10px;
-    max-height:1188px;
-    min-height:1188px;
+    font-size:13px;
+    max-height:1120px;
+    min-height:1120px;
     min-width:840px;
+    box-sizing: border-box;
 }
 
 * {
@@ -50,29 +50,28 @@ h4{
 header {
     display:flex;
     justify-content: space-between; 
-    padding:30px;
+    padding:20px;
     padding-bottom:0;
     position: relative;
 }
 
 header div {
     border-bottom:10px solid black;
-    padding-bottom:20px;
+    padding-bottom:15px;
 }
 
 img {
     position:absolute;
-    right:50px;
+    right:80px;
     top:10px;
     /* box-shadow: 5px 5px 5px lightgrey; */
 }
 
 #hero{
     box-sizing: border-box;
-    padding:30px;
-    width:810px;
+    padding:10px 20px;
     font-size:12px;
-    width:80%;
+    width:76%;
 }
 
 main {
@@ -81,9 +80,8 @@ main {
     flex-wrap: wrap;
     column-gap: 5%;
     background-color: #4A919E;
-    padding:20px 0;
+    padding:10px 0;
     width:760px;
-    margin-bottom:50px;
     
 }
 
@@ -111,7 +109,7 @@ main section article {
 }
 
 .openclassrooms p, article div {
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
 
 article div, article p, article ul, article h3 {
@@ -122,10 +120,10 @@ article div, article p, article ul, article h3 {
     color:black;
 }
 
-#contact ul li {
+article ul li {
     display:flex;
     align-items: center;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 
