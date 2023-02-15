@@ -2,7 +2,7 @@
     font-family: arial;
     max-width:840px;
     margin:0 auto;
-    font-size:13px;
+    font-size:14px;
     max-height:1120px;
     min-height:1120px;
     min-width:840px;
@@ -36,14 +36,14 @@ h2 {
 }
 
 h3 {
-    font-size:16px;
+    font-size:17px;
     border-bottom: 5px solid black;
     padding-bottom:5px;
     margin-bottom:10px;
 }
 
 h4{
-    font-size:12px;
+    font-size:15px;
     font-weight: bold;
     white-space: nowrap;
 }
@@ -70,7 +70,7 @@ img {
 #hero{
     box-sizing: border-box;
     padding:10px 20px;
-    font-size:12px;
+    font-size:14px;
     width:76%;
 }
 
@@ -103,16 +103,24 @@ main {
     flex:1.2
 }
 
-main section article {
+main  article {
     width:100%;
     margin-bottom:15px;
 }
 
-.openclassrooms p, article div {
+
+
+ article div {
+    margin-bottom:10px;
+ }
+
+
+
+.projets >div>div{
     margin-bottom:5px;
 }
 
-article div, article p, article ul, article h3 {
+article div,  article ul, article h3 {
     padding-left:30px;
 }
 
@@ -122,10 +130,9 @@ article div, article p, article ul, article h3 {
 
 article ul li {
     display:flex;
-    align-items: center;
+    align-items: baseline;
     margin-bottom:8px;
 }
-
 
 
 h4 +p {
@@ -136,19 +143,6 @@ article li {
     color:#212E53
 }
 
-.perso div {
-    width:100%;
-    display:flex;
-    align-items: center;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
-
-.perso div div {
-    margin:0;
-    padding:0;
-    
-}
 
 .experience {
     width:100%;
@@ -161,7 +155,7 @@ article li {
     align-items: center;
 }
 
-.experience div p, .perso div div p, .perso div p, #contact ul li p, .formation div p  {
+.experience div p, .perso div div p, .perso div p, #contact ul li p, .formation div p, article p{
     padding-left:10px;
 }
 
