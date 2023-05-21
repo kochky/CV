@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a4b46c7bcb.js" crossorigin="anonymous"></script>
     <title>CV Koch Christopher</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
         function generatePDF() {
             // Choose the element that our invoice is rendered in.
             const element = document.getElementById('toPdf');
@@ -16,183 +20,190 @@
         }
     </script>
 </head>
+
 <body>
     <div id="toPdf">
-        <header> 
+        <header>
             <div>
                 <h1>Christopher Koch</h1>
                 <h2>Développeur front-end </h2>
             </div>
-            <img src="photo identité.jpg" alt="photo de profil" width="100"/>
+            <img src="photo identité.jpg" alt="photo de profil" width="100" />
         </header>
-        
-        
+
+
         <section id="hero">
-            Actuellement en poste de développeur front, je continue à perfectionner mon travail et acquérir de nouvelles compétences, suite à ma reconversion professionnelle.
-        </section>
-        <section class="second-section">
-            <article id="contact">
-                <h3>Contact</h3>
-                <ul>
-                    <li>
-                        <i class="fab fa-linkedin fa-lg"></i>
-                        <p>www.linkedin.com/in/christopher-koch-frontend</p>
-                    </li>
-                    <li>
-                        <i class="fab fa-github fa-lg"></i>
-                        <p>https://github.com/kochky</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-portrait fa-lg"></i>
-                        <p>https://kochky.github.io/portfolio/</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope fa-lg"></i>
-                        <p>koch.christopher@hotmail.fr</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone-square fa-lg"></i>
-                        <p>06 95 18 82 49</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-house-user fa-lg"></i>
-                        <p>Marseille</p>
-                    </li>
-                </ul>
-            
-            </article>
-            <article>
-                <h3>Langages et outils</h3>
-                <ul>
-                    <li>React / Nextjs </li>
-                    <li>React native</li>
-                    <li>JavaScript / Typescript</li>
-                    <li>CSS / Sass</li>
-                    <li>Git / Github / Gitlab</li>
-                    <li>Agile/ Scrum</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>Qualités</h3>
-                <ul>
-                    <li>Autonome</li>
-                    <li>Esprit d'équipe</li>
-                    <li>Travailleur</li>
-                    <li>Exemplaire</li>
-                    <li>Disponible</li>
-                    <li>Responsable</li>
-                    <li>Créatif</li>
-                </ul>
-            </article>
-            
-        </section>
+            Anciennement directeur en grande distribution et suite à ma reconvertion, mon objectif est de relever de
+            nouveaux défis en tant que développeur front-end, en mettant à profit mes compétences en React, JavaScript
+            et CSS pour créer des expériences utilisateur exceptionnelles, améliorer la performance des applications web
+            et contribuer à des projets innovants.<br> Je suis passionné par le développement web et j'ai une
+            connaissance
+            approfondie des frameworks tels que React et Next.js, ce qui me permet de créer des interfaces utilisateur
+            dynamiques et réactives. </section>
+
         <main>
-            <article class="experience">
-                <h3>EXPERIENCES</h3>
-                <div>
-                    <h4>Développeur front-end</h4>
-                    <p>Manageo </p>
-                    <p>Depuis juillet 2022</p>
-                </div>
-                <div>
-                    <h4>Développeur d'application en freelance</h4>
-                    <p>Remote </p>
-                    <p>Février 2022 à Juillet 2022</p>
-                </div>
-                <div>
-                    <h4>Manager de magasin</h4>
-                    <p>Aldi </p>
-                    <p>Septembre 2015 à janvier 2021</p>
-                </div>
-                <div>
-                    <h4>Responsable de magasin</h4>
-                    <p>Intermarché </p>
-                    <p>Mai 2015 à septembre 2015</p>
-                </div>
-                <div>
-                    <h4>Chef de département alimentaire </h4>
-                    <p>Monoprix </p>
-                    <p>Juin 2014 à mai 2015</p>
-                </div>
-                <div>
-                    <h4>Manager/ second assistant de direction</h4>
-                    <p>McDonald’s</p>
-                    <p>Octobre 2010 à juin 2014</p>
-                </div>
-            </article>
-            <section class="first-section">
+            <section class="first">
+                <article class="experience">
+                    <h3>EXPERIENCES</h3>
+
+                    <div>
+                        <h4>Développeur front-end</h4>
+                        <span><span>Manageo - </span>
+                            <span>Depuis juillet 2022</span></span>
+                        <div>
+                            <p class="green">React, NextJs, GatsbyJs, RTK, Redux, Mui, styled-component,
+                                Storybook,REST,
+                                Javascript,Typescript, Jest Agile/Scrum, Gitlab</p>
+                            <p>
+                              
+                                Création pages et composants react/nextjs, mise en place de nouvelles features,
+                                maintenance
+                                d'application, création "from scratch" d'applications webn mise en place de Auth0,
+                                création
+                                programmatic advertising, d'une librairie de composants react avec storybook.
+                            </p>
+                             
+                            </div>
+                    </div>
+                    <div>
+                        <h4>Développeur d'application en freelance</h4>
+                        <span><span>Remote - </span>
+                            <span>Février 2022 à Juillet 2022</span></span>
+                        <p>
+                            <p class="green">React, React native, PHP</p>
+                            Création de site wordpress, maintenance d'application web, création application mobile
+                        </p>
+                    </div>
+                </article>
                 <article class="formation">
                     <h3>FORMATION</h3>
                     <div>
-                        <h4>Diplôme Développeur d’application JavaScript React </h4>
-                        <p>Openclassrooms 2021 Niveau 6</p>
-                        <p>Formation basée sur la pratique. 14 projets ont été réalisés, que ce soit de la reproduction de maquette en CSS et HTML, à des applications utilisant React et Redux.
-
+                        <h4>Diplôme développeur d’application Javacript React </h4>
+                        <p class="green">Openclassrooms 2021 Niveau 6</p>
+                        <p>Formation basée sur la pratique. 14 projets ont été réalisés, que ce soit de la reproduction
+                            de maquette en CSS et HTML, à des applications utilisant React et Redux.
                         </p>
                     </div>
                     <div>
                         <h4>Baccalauréat ES</h4>
-                        <p>Mention assez bien 2006</p>
-                    
+                        <p class="green">Mention assez bien 2006</p>
                     </div>
                 </article>
                 <article class="projets">
-                    <h3>PROJETS </h3>
+                    <h3>PROJETS PERSONNELS </h3>
                     <div>
-                   
-                            <h4>Manageo</h4>
-                            <p>React, Nextjs, Gatsbyjs, RTK</p>
- 
-                        <p>Projets: manageo.com, manageo.fr, mlist.manageo.com, mcampaign.manageo.com, platform.manageo.com, backoffice.manageo.tech, verif.com 
-                        <br>
-                       Création pages et composants, mise en place de Auth0, du header bidding, d'une librairie de composants react avec storybook</p>
+                        <h4>Ma Copro</h4>
+                        <p class="green">React, NodeJs, Express, Mui, GraphQL</p>
+                        <p>Application de gestion de copropriété </p>
                     </div>
                     <div>
-                       
-                            <h4>Portfolio</h4>
-                            <p>React, Sass, GSAP</p>
-                       
+                        <h4>Portfolio</h4>
+                        <p class="green">React, Sass, GSAP</p>
                         <p>Regroupe tout mes projets réalisés d'une façon très design et dynamique </p>
                     </div>
                     <div>
-                      
-                            <h4>Jeu du 5000</h4>
-                            <p>React, Three.js</p>
-                       
+                        <h4>Jeu du 5000</h4>
+                        <p class="green">React, Three.js</p>
                         <p>Jeu de dés se jouant à 2 joueurs (player vs IA) </p>
                     </div>
                     <div>
-                       
-                            <h4>DartApp</h4>
-                            <p>React Native</p>
-                    
-                        <p>Application mobile servant à noter les scores des parties de fléchettes en mode championnat, avec historique  </p>
+
+                        <h4>DartApp</h4>
+                        <p class="green">React Native</p>
+
+                        <p>Application mobile servant à noter les scores des parties de fléchettes en mode championnat,
+                            avec historique </p>
                     </div>
                     <div>
-                       
-                            <h4>Openclassrooms</h4>
-                            <p>HTML/CSS/Js/React</p>
-                    
-                        <p>Projets réalisés sont hebergés sur mon github et portfolio</p>
+
+                        <h4>Openclassrooms</h4>
+                        <p class="green">HTML/CSS/Js/React</p>
+
+                        <p>Projets réalisés lros de ma formation hébergés sur mon github et portfolio</p>
                     </div>
-                
                 </article>
 
-            
+
+            </section>
+            <section class="second-section">
+                <article id="contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fab fa-linkedin fa-lg green"></i>
+                            <p>www.linkedin.com/in/christopher-koch-frontend</p>
+                        </li>
+                        <li>
+                            <i class="fab fa-github fa-lg green"></i>
+                            <p>https://github.com/kochky</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-portrait fa-lg green"></i>
+                            <p>https://kochky.github.io/portfolio/</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope fa-lg green"></i>
+                            <p>koch.christopher@hotmail.fr</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-square fa-lg green"></i>
+                            <p>06 95 18 82 49</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-house-user fa-lg green"></i>
+                            <p>Marseille</p>
+                        </li>
+                    </ul>
+
+                </article>
+                <article>
+                    <h3>Langages et outils</h3>
+                    <ul>
+                        <li>React / Nextjs / GastbyJs</li>
+                        <li>React native</li>
+                        <li>JavaScript / Typescript</li>
+                        <li>NodeJs / Express</li>
+                        <li>CSS / Sass</li>
+                        <li>Git / Github / Gitlab</li>
+                        <li>Agile/ Scrum</li>
+                        <li>Redux / RTK</li>
+                        <li>REST / GraphQL</li>
+
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Qualités</h3>
+                    <ul>
+                        <li>Autonome</li>
+                        <li>Esprit d'équipe</li>
+                        <li>Travailleur</li>
+                        <li>Exemplaire</li>
+                        <li>Disponible</li>
+                        <li>Responsable</li>
+                        <li>Créatif</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Langues parlées</h3>
+                    <ul>
+                        <li>Anglais</li>
+                        <li>Allemand</li>
+                    </ul>
+                </article>
+
             </section>
 
-        
-            
 
-        
-            
-        
+
+
+
 
         </main>
-        
+
     </div>
     <button onclick="generatePDF()">Download as PDF</button>
 
 </body>
+
 </html>

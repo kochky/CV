@@ -7,6 +7,8 @@
     min-height:1120px;
     min-width:840px;
     box-sizing: border-box;
+    padding:15px;
+    box-shadow: 0px 4px 4px black;
 }
 
 * {
@@ -37,7 +39,7 @@ h2 {
 
 h3 {
     font-size:17px;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #30c4b1;
     padding-bottom:5px;
     margin-bottom:10px;
 }
@@ -50,13 +52,12 @@ h4{
 header {
     display:flex;
     justify-content: space-between; 
-    padding:20px;
-    padding-bottom:0;
+    padding:0 20px;
     position: relative;
 }
 
 header div {
-    border-bottom:10px solid black;
+    border-bottom:10px solid #30c4b1;
     padding-bottom:15px;
 }
 
@@ -64,43 +65,30 @@ img {
     position:absolute;
     right:80px;
     top:10px;
-    /* box-shadow: 5px 5px 5px lightgrey; */
 }
 
 #hero{
     box-sizing: border-box;
-    padding:10px 20px;
-    font-size:14px;
-    width:76%;
+    padding: 15px;
+   
+    width:75%;
 }
 
 main {
     box-sizing: border-box;
     display:flex;
-    flex-wrap: wrap;
-    column-gap: 5%;
-    background-color: #4A919E;
-    padding:10px 0;
-    width:760px;
-    
-}
-
-.first-section {
-    width:100%;
-}
-
-.second-section {
-    width:100%;
-    display:flex;
     column-gap: 20px;
 }
 
-.second-section article {
-    flex:1;
+.first-section {
+    flex:2
 }
 
-#contact {
-    flex:1.2
+.second-section {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 main  article {
@@ -108,19 +96,13 @@ main  article {
     margin-bottom:15px;
 }
 
-
-
- article div {
+article > div {
     margin-bottom:10px;
- }
-
-
-
-.projets >div>div{
-    margin-bottom:5px;
 }
 
-article div,  article ul, article h3 {
+
+
+article >div,  article ul, article h3 {
     padding-left:30px;
 }
 
@@ -130,35 +112,27 @@ article div,  article ul, article h3 {
 
 article ul li {
     display:flex;
-    align-items: baseline;
+    align-items: center;
     margin-bottom:8px;
 }
 
 
-h4 +p {
-    color:#212E53
-}
-
-article li {
-    color:#212E53
+ .green{
+    color:#134e46;
+    margin-bottom:3px;
 }
 
 
-.experience {
-    width:100%;
-}
 
-.experience div {
+.experience > div {
     display:flex;
     margin:0;
-    margin-bottom:5px;
-    align-items: center;
+    margin-bottom:10px;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
-.experience div p, .perso div div p, .perso div p, #contact ul li p, .formation div p, article p{
+#contact ul li p{
     padding-left:10px;
 }
 
-.formation div p{
-    margin-right:60px;
-}
