@@ -8,17 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a4b46c7bcb.js" crossorigin="anonymous"></script>
     <title>CV Koch Christopher</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        function generatePDF() {
-            // Choose the element that our invoice is rendered in.
-            const element = document.getElementById('toPdf');
-            // Choose the element and save the PDF for our user.
-            html2pdf().from(element).save();
-        }
-    </script>
 </head>
 
 <body>
@@ -51,7 +40,8 @@
                         <span><span>Optimum Automotive - </span>
                             <span>Depuis juillet 2023</span></span>
                         <div>
-                            <p class="green">React, React Native, NestJs, Rxjs, Redux, Akita, GraphQL, Typescript, Agile/Scrum, Azure</p>
+                            <p class="green">React, React Native, NestJs, Rxjs, Redux, Akita, GraphQL, Typescript,
+                                Agile/Scrum, Azure</p>
                             <p>
 
                                 Création features et maintenance d'application mobile, d'application web, et du
@@ -216,8 +206,36 @@
         </main>
 
     </div>
-    <button onclick="generatePDF()">Download as PDF</button>
+    <button id="btnConvert">Download as PDF</button>
 
 </body>
+<!-- Ajouter pdfmake -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+
+<!-- Ajouter dom-to-image -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+<script>
+    document.getElementById('btnConvert').addEventListener('click', function () {
+        var element = document.getElementById('toPdf');
+        domtoimage.toPng(element)
+            .then(function (dataUrl) {
+                    var pdf = pdfMake.createPdf({
+                        content: [
+                        {
+                            image: dataUrl,
+                            width: 580, // Ajustez la largeur selon vos besoins
+                        }
+                    ],
+                    pageMargins: [10, 10, 10, 10], 
+                });
+
+                pdf.download('document.pdf');
+            })
+            .catch(function (error) {
+                console.error('Erreur lors de la conversion en image:', error);
+            });
+    });
+</script>
 
 </html>
