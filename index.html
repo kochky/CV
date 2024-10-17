@@ -15,21 +15,17 @@
         <header>
             <div>
                 <h1>Christopher Koch</h1>
-                <h2>Développeur front-end </h2>
+                <h2>Développeur JS</h2>
             </div>
             <img src="photo identité.jpg" alt="photo de profil" width="100" />
         </header>
 
 
         <section id="hero">
-            Anciennement directeur en grande distribution et suite à ma reconvertion, mon objectif est de relever de
-            nouveaux défis en tant que développeur front-end, en mettant à profit mes compétences en React, JavaScript
+            Mon objectif est de relever de
+            nouveaux défis en tant que développeur , en mettant à profit mes compétences en React, JavaScript
             et CSS pour créer des expériences utilisateur exceptionnelles, améliorer la performance des applications web
-            et contribuer à des projets innovants.<br> Je suis passionné par le développement web et j'ai une
-            connaissance
-            approfondie des frameworks tels que React, Next.js et React native, ce qui me permet de créer des interfaces
-            utilisateur
-            dynamiques et réactives. </section>
+            et contribuer à des projets innovants.</section>
 
         <main>
             <section class="first">
@@ -88,10 +84,7 @@
                             de maquette en CSS et HTML, à des applications utilisant React et Redux.
                         </p>
                     </div>
-                    <div>
-                        <h4>Baccalauréat ES</h4>
-                        <p class="green">Mention assez bien 2006</p>
-                    </div>
+
                 </article>
                 <article class="projets">
                     <h3>PROJETS PERSONNELS </h3>
@@ -111,19 +104,11 @@
                         <p>Jeu de dés se jouant à 2 joueurs (player vs IA) </p>
                     </div>
                     <div>
-
                         <h4>DartApp</h4>
                         <p class="green">React Native</p>
 
                         <p>Application mobile servant à noter les scores des parties de fléchettes en mode championnat,
                             avec historique </p>
-                    </div>
-                    <div>
-
-                        <h4>Openclassrooms</h4>
-                        <p class="green">HTML/CSS/Js/React</p>
-
-                        <p>Projets réalisés lros de ma formation hébergés sur mon github et portfolio</p>
                     </div>
                 </article>
 
@@ -209,32 +194,16 @@
     <button id="btnConvert">Download as PDF</button>
 
 </body>
-<!-- Ajouter pdfmake -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
-
-<!-- Ajouter dom-to-image -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     document.getElementById('btnConvert').addEventListener('click', function () {
         var element = document.getElementById('toPdf');
-        domtoimage.toPng(element)
-            .then(function (dataUrl) {
-                    var pdf = pdfMake.createPdf({
-                        content: [
-                        {
-                            image: dataUrl,
-                            width: 580, // Ajustez la largeur selon vos besoins
-                        }
-                    ],
-                    pageMargins: [10, 10, 10, 10], 
-                });
-
-                pdf.download('document.pdf');
-            })
-            .catch(function (error) {
-                console.error('Erreur lors de la conversion en image:', error);
-            });
+        var opt = {
+            filename: 'cv_koch_christopher.pdf',
+        };
+        html2pdf().set(opt).from(element).save();
     });
 </script>
 
